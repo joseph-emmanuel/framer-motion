@@ -100,7 +100,7 @@ function About() {
       </motion.svg> */}
 
       </div>
-      <h1>Path Route</h1>
+      <Link href="../../pizzajoint">Pizza Joint</Link>
       {/* <Link href="path/insidePath">Inside path</Link> */}
     </div >
   )

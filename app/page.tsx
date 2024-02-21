@@ -23,8 +23,8 @@ export default function Home() {
       // whileHover={{ scale: 1.1 }}
       // drag="x"
       // dragConstraints={{ left: 100 }}
-      animate={{rotate:[0,200,200,0],x:[0,200,200,0]}}
-      transition={{repeat:Infinity,duration:2}}
+      // animate={{rotate:[0,200,200,0],x:[0,200,200,0]}}
+      // transition={{repeat:Infinity,duration:2}}
       ></motion.div>
       <Link href="/about">about</Link>
     </div>

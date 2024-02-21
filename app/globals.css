@@ -6,21 +6,23 @@ body {
   width: 100VW;
   height: 100vh;
 
-  background: linear-gradient(180deg, #ff008c 0%, rgb(211,9,225) 100%);
+  background: linear-gradient(180deg, #ff008c 0%, rgb(211, 9, 225) 100%);
   overflow: hidden;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  }
-  .example-container div {
+}
+
+.example-container div {
   background: white;
   border-radius: 30px;
   width: 150px;
   height: 150px;
-  }
-  .refresh {
+}
+
+.refresh {
   padding: 10px;
   position: absolute;
   background: rgba(0, 0, 0, 0.4);
@@ -33,4 +35,13 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  }
+}
+
+.pizza-svg {
+  width: 80px;
+  overflow: visible;
+  stroke: #fff;
+  stroke-width: 4;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}

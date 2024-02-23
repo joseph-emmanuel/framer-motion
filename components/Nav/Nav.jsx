@@ -1,8 +1,11 @@
 "use client";
-import React from 'react'
-import { motion } from 'framer-motion'
+import React, { useEffect } from 'react'
+import { motion, useScroll } from 'framer-motion'
 
 function Nav() {
+    const {scrollYProgress} = useScroll();
+    
+   
     const svgVariants = {
         hidden: { rotate: 0 },
         visible: {
@@ -32,7 +35,7 @@ function Nav() {
         }
       }
   return (
-    <div className="flex mb-6">
+    <div className="flex mb-6 fixed pb-7">
           <div className="mr-7"> <div className='w-6 text-white'>
           <motion.svg className="pizza-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
             // variants={svgVariants2}

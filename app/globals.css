@@ -1,13 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @font-face {
   font-family: 'Quicksand';
   src: url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
-body, ul, h1, h2, h3, p, button, a, div{
+
+body,
+ul,
+h1,
+h2,
+h3,
+p,
+button,
+a,
+div {
   margin: 0;
   padding: 0;
   color: white;
@@ -16,10 +26,11 @@ body, ul, h1, h2, h3, p, button, a, div{
   list-style-type: none;
   text-decoration: none;
 }
-body{
-  background: rgb(100,0,123);
-  background: radial-gradient(circle, rgba(100,0,123,1) 0%, rgba(62,20,86,1) 100%);
-  overflow: hidden;
+
+body {
+  background: rgb(100, 0, 123);
+  background: radial-gradient(circle, rgba(100, 0, 123, 1) 0%, rgba(62, 20, 86, 1) 100%);
+  /* overflow: hidden; */
 }
 
 .example-container div {
@@ -53,12 +64,131 @@ body{
   stroke-linecap: round;
 }
 
-.logotext:after { 
-  content:"";
-  display:block;
+.logotext:after {
+  content: "";
+  display: block;
   width: full;
-  max-width:100%;
+  max-width: 100%;
   border-bottom: 1px solid rgb(176, 165, 165);
   margin: 3px auto;
   opacity: 0.5;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* width: 0px; */
+  height: 10px;
+  background: var(--red);
+  transform-origin: 0%;
+  z-index: 9999;
+}
+
+.bg {
+  stroke: var(--accent);
+  opacity: 0;
+}
+
+.progress .indicator {
+  stroke: var(--accent);
+}
+
+body {
+  --black: #000000;
+  --ash-black: #222;
+  --white: #fafafa;
+  --sky: #00ccff;
+  --green: #22dddd;
+  --blue: #1300ff;
+  --dusk: #6600ff;
+  --purple: #9900ff;
+  --pink: #ff0066;
+  --red: #fe0222;
+  --orange: #fd7702;
+  --yellow: #ffbb00;
+
+  --background: var(--blue);
+  --accent: var(--white);
+
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  color: var(--accent);
+  padding-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+#progress {
+  position: fixed;
+  top: 200px;
+  left: 80px;
+  /* transform: rotate(-90deg); */
+}
+
+circle {
+  stroke-dashoffset: 0;
+  stroke-width: 20%;
+  fill: none;
+}
+
+.bg {
+  stroke: var(--accent);
+  opacity: 0;
+}
+
+#progress .indicator {
+  stroke: var(--accent);
+}
+
+
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  background: #fff3;
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: #fff3;
+}
+
+p {
+  /* visibility: hidden; */
+  opacity: .1;
+  font-size: 1.5rem;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  color: var(--accent);
+}
+
+.mainLogo svg {
+  overflow: visible;
+}
+
+.square {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  margin-top: 51rem;
+}
+
+.title {
+  color: white;
+  margin-top: 5rem;
 }
